@@ -1,0 +1,171 @@
+<header
+  class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-7 py-5 bg-transparent bg-opacity-60 backdrop-blur-md text-white shadow-md">
+  <!-- Logo -->
+  <div class="flex items-center gap-2 pl-40">
+    <img [src]="vanixLogo" alt="Logo" class="w-[92px] h-[44px]" />
+  </div>
+
+  <!-- Navigation and CTA -->
+  <div class="option-group flex-1 flex justify-end items-center gap-12 -ml-1000">
+
+    <!-- Division Dropdown -->
+    <div class="nav-item relative group">
+      <button class="nav-button flex items-center gap-1 ">
+        Division
+        <img [src]="dropdown" class="inline ml-1" />
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute top-full left-0 bg-gray-900 text-white rounded-md p-4 min-w-[300px] shadow-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50">
+        <a [href]="evManagementUrl" target="_blank"
+          class="block transition-all duration-200 hover:scale-105 hover:bg-gray-800 hover:shadow-md hover:rounded-md cursor-pointer p-3">
+          <span class="text-green-400 font-medium text-sm">EV Mobility</span>
+          <p class="text-xs text-gray-300">We specialized in batteries</p>
+        </a>
+
+        <a [href]="assetManagementUrl" target="_blank"
+          class="block mt-4 transition-all duration-200 hover:scale-105 hover:bg-gray-800 hover:shadow-md hover:rounded-md cursor-pointer p-3">
+          <span class="text-green-400 font-medium text-sm">Asset Management</span>
+          <p class="text-xs text-gray-300">Seamless Real-Time Tracking</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Products Dropdown -->
+    <div class="nav-item relative group">
+      <button class="nav-button flex items-center gap-1">
+        Products
+        <img [src]="dropdown" class="inline ml-1" />
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute top-full left-0  bg-gray-900 text-white rounded-xl p-6 shadow-2xl z-50 min-w-[450px] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200">
+        <div class="grid grid-cols-2 gap-10">
+          <!-- EV Mobility Column -->
+          <div>
+            <h3 class="text-gray-400 font-semibold mb-3">Ev Mobility</h3>
+            <a [href]="wimUrl"
+              class="block mb-4 b-green-800/10 hover:bg-gray-800/20 px-4 py-3 rounded-md transform transition-transform duration-200 hover:scale-105 cursor-pointer shadow-sm">
+              <span class="text-green-400 font-semibold text-sm">WIM 150</span>
+              <p class="text-xs text-gray-400">Versatile Wired Tracker</p>
+            </a>
+            <a [href]="vevUrl"
+              class="block mb-4 b-green-800/10 hover:bg-gray-800/20 px-4 py-3 rounded-md transform transition-transform duration-200 hover:scale-105 cursor-pointer shadow-sm">
+              <span class="text-green-400 font-semibold text-sm">VeV X1</span>
+              <p class="text-xs text-gray-400">EVSE AC Charger</p>
+            </a>
+          </div>
+
+
+
+          <div>
+            <h3 class="text-gray-400 font-semibold mb-3">Assets Management</h3>
+            <a [href]="atmUrl"
+              class="block mb-4 b-green-800/10 hover:bg-gray-800/20 px-4 py-3 rounded-md transform transition-transform duration-200 hover:scale-105 cursor-pointer shadow-sm">
+              <span class="text-green-400 font-semibold text-sm">ATM 150</span>
+              <p class="text-xs text-gray-400">Smart Personal Tracker</p>
+            </a>
+            <a [href]="trackUrl"
+              class="block mb-4 b-green-800/10 hover:bg-gray-800/20 px-4 py-3 rounded-md transform transition-transform duration-200 hover:scale-105 cursor-pointer shadow-sm">
+              <span class="text-green-400 font-semibold text-sm">TracX 1</span>
+              <p class="text-xs text-gray-400">IoT & Development Module</p>
+            </a>
+            <a [href]="bleUrl"
+              class="block mb-4 b-green-800/10 hover:bg-gray-800/20 px-4 py-3 rounded-md transform transition-transform duration-200 hover:scale-105 cursor-pointer shadow-sm">
+              <span class="text-green-400 font-semibold text-sm">BLE Gateway</span>
+              <p class="text-xs text-gray-400">Smart BLE hub</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Newsroom Navigation Dropdown -->
+    <div class="nav-item relative group">
+      <button class="nav-button flex items-center gap-1">
+        Newsroom
+        <img [src]="dropdown" class="inline ml-1" />
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute top-full left-0  hidden group-hover:flex flex-col bg-gray-900 text-white rounded-lg p-4 shadow-xl z-50 min-w-[200px] space-y-2">
+
+        <a href="https://testwebsite.vanixtechnologies.com/blogs"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>Blogs</span>
+          <span class="text-green-400">→</span>
+        </a>
+
+        <a href="https://testwebsite.vanixtechnologies.com/press"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>Press </span>
+          <span class="text-green-400">→</span>
+        </a>
+
+        <a href="https://testwebsite.vanixtechnologies.com/events"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>Events</span>
+          <span class="text-green-400">→</span>
+        </a>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="nav-item relative group">
+      <button class="nav-button flex items-center gap-1">
+        Company
+        <img src="/assets/images/dropdown.svg" class="inline ml-1" />
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div
+        class="absolute top-full left-0 hidden group-hover:flex flex-col bg-gray-900 text-white rounded-lg p-4 shadow-xl z-50 min-w-[200px] space-y-2 ">
+
+        <a href="https://testwebsite.vanixtechnologies.com/about-us"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>About us</span>
+          <span class="text-green-400">→</span>
+        </a>
+
+        <a href="https://testwebsite.vanixtechnologies.com/case-studies"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>Case studies</span>
+          <span class="text-green-400">→</span>
+        </a>
+
+        <a href="https://testwebsite.vanixtechnologies.com/faqs"
+          class="flex items-center justify-between text-green-400 hover:bg-gray-800 hover:rounded-md px-3 py-2 transition-all duration-200">
+          <span>FAQs</span>
+          <span class="text-green-400">→</span>
+        </a>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- CTA Button -->
+    <a [href]="contactUrl" target="_blank" rel="noopener noreferrer">
+      <button
+        class="w-[150px] h-[44px] gap-2 px-4 py-2 rounded shadow-[4px_4px_10px_#0000000d] bg-[#22b36a] text-[#f5fffa] text-[13px] leading-[100%] font-[400] font-[Poppins] flex justify-center items-center transition-transform hover:scale-105">
+        <img [src]="touchbutton" alt="Chat Icon" class="w-[25px] h-[25px]" />
+        <span>Get in touch</span>
+      </button>
+    </a>
+
+  </div>
+</header>

@@ -1,0 +1,91 @@
+<footer class="bg-gradient-to-r from-green-800 to-cyan-900 text-white pt-16">
+  <!-- Top Subscribe Section -->
+  <div
+    class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-center items-center gap-10 text-center lg:text-left">
+    <!-- Heading Section -->
+    <div>
+      <h2 class="text-4xl font-[poppins] mb-4">Stay Connected With Us</h2>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="max-w-md w-full">
+      <h3 class="text-lg font-semibold mb-2">Subscribe to our Newsletters</h3>
+      <div class="flex items-center gap-2 mb-2" style="background: var(--black-tint-15, rgba(0, 0, 0, 0.1490196078))">
+        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-md bg-[rgba(0,0,0,0.15)]" />
+        <button class="bg-white text-black px-3 py-2 rounded-md font-[poppins] hover:bg-gray-100">
+          Subscribe
+        </button>
+      </div>
+      <p class="text-sm text-gray-200">
+        Join the tech revolution and stay in the know. Subscribe for exclusive
+        updates, offers, and a glimpse into the future.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="bg-[#071421] mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-8 text-gray-300">
+      <!-- Logo -->
+      <div class="col-span-1">
+        <img src="/assets/images/vanix-logo.svg" alt="Vanix Logo"
+          class="transform transition-transform duration-300 ease-in-out hover:scale-105 h-20 mb-4" />
+      </div>
+
+      <!-- Division -->
+      <div>
+        <h4 class="font-[poppins] text-[18px] text-[#edfdf5] mb-3">Division</h4>
+        <ul class="space-y-2">
+          <li *ngFor="let division of divisions">
+            <a [href]="division.url"
+              class="text-blue-400 transform transition-transform duration-300 ease-in-out hover:scale-105">
+              {{ division.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="font-[poppins] text-[18px] text-[#edfdf5] mb-3">Company</h4>
+        <ul class="space-y-2">
+          <li *ngFor="let link of links">
+            <a [href]="link.url" class="text-gray-600 font-semibold hover:text-white">
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Newsroom -->
+      <div>
+        <h4 class="font-[poppins] text-[18px] text-[#edfdf5] mb-3">Newsroom</h4>
+        <ul class="space-y-2">
+          <li *ngFor="let link of links2">
+            <a [href]="link.url" class="text-gray-600 font-semibold hover:text-white">
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-[poppins] text-[18px] text-[#edfdf5] mb-3">Contact us</h4>
+        <p class="text-sm leading-relaxed text-gray-600 font-semibold">
+          Address: {{ contactAddress }}
+        </p>
+        <div class="flex gap-4 mt-4">
+          <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank">
+            <img [src]="link.icon" [alt]="link.alt" class="w-6 h-6 hover:scale-110 transition-transform duration-300" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-gray-700 text-center py-4 text-gray-400 text-sm">
+      Vanix Technologies © 2024. All rights reserved.
+    </div>
+  </div>
+</footer>
