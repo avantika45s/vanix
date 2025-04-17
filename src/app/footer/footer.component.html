@@ -72,9 +72,13 @@
       <!-- Contact -->
       <div>
         <h4 class="font-[poppins] text-[18px] text-[#edfdf5] mb-3">Contact us</h4>
-        <p class="text-sm leading-relaxed text-gray-600 font-semibold">
+        <p class="text-sm leading-relaxed text-gray-600 font-semibold transition-transform duration-300 cursor-pointer">
           Address: {{ contactAddress }}
         </p>
+        <button (click)="toggleMap()"
+            class="mt-2 bg-transparent hover:scale-105 text-gray-600 px-0 py-0 rounded-md transition-all duration-300">
+            {{ showMap ? 'Hide Map' : 'Show Map' }}
+          </button>
         <div class="flex gap-4 mt-4">
           <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank">
             <img [src]="link.icon" [alt]="link.alt" class="w-6 h-6 hover:scale-110 transition-transform duration-300" />
