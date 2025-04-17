@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css'] 
 })
 export class HeaderComponent {
+  
   vanixLogo = 'assets/images/vanix-logo.svg';
   dropdown = 'assets/images/dropdown.svg';
   touchbutton = 'assets/images/get-in-touch-light.svg';

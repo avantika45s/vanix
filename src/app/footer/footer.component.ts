@@ -38,9 +38,9 @@ export class FooterComponent implements OnInit {
   showMap = false;
   map: L.Map | undefined;
 
-  // Coordinates for the organization
-  latitude = 17.4435;     // Gachibowli Latitude
-  longitude = 78.3772;    // Gachibowli Longitude
+  
+  latitude = 17.4435;     
+  longitude = 78.3772;   
 
   ngOnInit(): void {}
 

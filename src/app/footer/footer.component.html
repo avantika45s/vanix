@@ -84,7 +84,17 @@
             <img [src]="link.icon" [alt]="link.alt" class="w-6 h-6 hover:scale-110 transition-transform duration-300" />
           </a>
         </div>
+
+        <!-- Toggle Map Button -->
+        <!-- <div class="mt-4">
+          
+        </div> -->
       </div>
+    </div>
+
+    <!-- Map Container -->
+    <div *ngIf="showMap" class="max-w-7xl mx-auto px-6 pb-8">
+      <div id="map" class="w-full h-80 rounded-lg shadow-md"></div>
     </div>
 
     <!-- Bottom bar -->
